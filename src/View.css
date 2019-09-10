@@ -1,16 +1,71 @@
 #sub-header{
     position: absolute;
     left: 50%;
-    top: 125px;
+    top: 180px;
     transform: translate(-50%);
     color: white;
     font-weight: 700;
     font-size: 20px;
 }
 
-#view{
+#view-container{
     position: absolute;
+    top: 190px;
     width: 100%;
-    background-color: blue;
-    overflow: hidden;
+    bottom: 0;
+}
+
+.view{
+    position: relative;
+    background-color: #5588A3;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    min-height: 70px;
+    border-radius: 20px 20px 0 0;
+    line-height: 30px;
+}
+
+.meal-title{
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    text-overflow: ellipsis;
+}
+
+.meal-title:hover{
+    color: rgba(0,0,0,0.6);
+}
+
+.fa-heart{ 
+    position: absolute;
+    font-size: 25px;
+    top: 50%;
+    transform: translateY(-42%);
+    color: white;
+    right: 30px;
+    cursor: pointer;
+}
+
+.view-body{
+    background-color: white;
+    width: 70%;
+    position: relative;
+    top: -69px;
+    left: 50%;
+    padding-top: 70px; 
+    transform: translate(-50%);
+    border-radius: 20px;
+    z-index: -1;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+}
+
+.img{
+    width: 25%;
+    border-radius: 10px;  
+    margin: 25px 20px 20px 25px;   
 }

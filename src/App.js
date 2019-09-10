@@ -29,16 +29,16 @@ class App extends Component {
   render(){
     console.log("App.js State: ", this.state.name)
     return (
-      <div className="App">
+      <div id="App">
         <header className="App-header">
           <h1 className="Header">Recipe Finder</h1>
           <Search mySearch={this.mySearch} />
-          {this.state.name !== null ? (
+        </header>
+        {this.state.name !== null ? (
             <View meals = {this.state.meals} />
           ) : (
             <div id="sub-header">Type a Dish Name to Search for its Ingredients</div>
-          )}
-        </header>
+        )}
       </div>
     );
   }
