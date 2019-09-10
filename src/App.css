@@ -1,0 +1,27 @@
+.App-header{
+    background-color:#444444 ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.Header{
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 400;
+
+}
+
+#sub{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}

@@ -1,0 +1,16 @@
+#sub-header{
+    position: absolute;
+    left: 50%;
+    top: 125px;
+    transform: translate(-50%);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#view{
+    position: absolute;
+    width: 100%;
+    background-color: blue;
+    overflow: hidden;
+}
