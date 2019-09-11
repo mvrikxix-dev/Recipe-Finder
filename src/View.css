@@ -69,3 +69,45 @@
     border-radius: 10px;  
     margin: 25px 20px 20px 25px;   
 }
+
+@media only screen and (max-width: 425px){
+    #sub-header{
+        top: 220px;
+        width: 250px;
+        font-size: 18px;
+        text-align: center;
+    }    
+
+    #view-container{
+        top: 220px;
+    }
+
+    .img{
+        width: 89%;
+        margin: 12px;
+    }
+
+    .fa-heart{
+        right: 12px;
+        top: 27%;
+        font-size: 23px;
+    }
+
+    .meal-title{
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+        width: 80%;
+        left: 1%;
+        top: 20%;
+        transform: translateY(-25%);
+    }
+
+    .view{
+        width: 80%;
+    }
+
+    .view-body{
+        width: 80%;
+    }
+}
