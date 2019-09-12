@@ -26,17 +26,21 @@ const View = (props) => {
             }
 
             function viewIngred(meal){
+                console.log(meal.strMeal);
                var i, rows = [];
                for(i=1;i<=20;i++){
-                  rows.push(i);       
+                    var value = meal['strIngredient'+i] + " ---- " + meal['strMeasure'+i]
+                    if(value!==" ---- " && value!=="null ---- null"){
+                        rows.push(value);
+                    }       
                } 
-               var ingredList = rows.forEach(row => {
+               var ingredList = rows.map(row => {
                    return(
-                       console.log(<p>{row}</p>)
+                        <p key={Math.random()}>{row}</p>
                    )
                })
                return(
-                    <h1>{ingredList}</h1>
+                    <div className="ingred-list">{ingredList}</div>
                 )
             }
             // <p>{meal.strIngredient1} ---- {meal.strMeasure1}</p>
@@ -59,9 +63,7 @@ const View = (props) => {
                             </div>
                             <div className="meal-ingred">
                                 <p>Ingredients</p>
-                                <div className="ingred-list">
-                                    {viewIngred(meal)}
-                                </div>
+                                {viewIngred(meal)}
                             </div>
                             <div className="meal-recipe">
                                 <p>Recipe</p>

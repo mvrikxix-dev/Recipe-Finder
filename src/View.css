@@ -122,6 +122,10 @@
     padding-left: 15px;
 }
 
+.ingred-list p{
+    margin-top: 8px; 
+}
+
 .meal-recipe{
     color:black;
     margin-left: 3%;
