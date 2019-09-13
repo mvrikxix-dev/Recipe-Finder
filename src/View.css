@@ -151,16 +151,123 @@
 }
 
 @media only screen and (max-width: 425px){
+    #view-container{
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        min-height: 100%;
+        /* background-color: rgba(255,255,255,0.6); */
+    }
+
+    #sub-header{
+        /* border: 2px dashed grey; */
+        position: absolute;
+        left: 50%;
+        top: 220px;
+        min-width: 400px;
+        transform: translate(-50%);
+        color: rgba(255,255,255,0.5);
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+    }
+
     .wrapper{
-        margin-top: 13%;
+        margin-top: 35px;
+        margin-bottom: 10px;
+        width: 80%;
+        height: 790px;
     }
 
     .title{
-        min-width: 82%;
-        font-size: 9px;
+        display: inline-block;
+        /* border: 2px dashed gainsboro; */
+        font-size: 9.5px;
+        padding-left: 6px;
+        padding-right: 6px;
+        min-width: 85%;
+        max-width: 85%;
+        height: 61px;
+        text-align: center;
+        line-height: 23px;
+        color: #E8E8E8;
+        cursor: pointer;
     }
-     
+ 
+    .title h1{
+        position: absolute;
+        top: 2.5%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
     .heart{
-        min-width: 10%;
+        display: inline-block;
+        /* border: 2px dashed gainsboro; */
+        min-width: 8.5%;
+        max-width: 8.5%;
+        height: 61px;
+        font-size: 20px;
+        float: right;
+        color: white;
+        cursor: pointer;
     } 
+
+    .heart i{
+        position: absolute;
+        right: 9px;
+        line-height: 40px;
+    }
+
+    .left{
+        display: inline-block;
+        width: 92.3%;
+        height: 100%;
+        /* border: 2px dashed grey; */
+    }
+
+    .right{
+        width: 100%;
+        min-height: 100%;
+        /* border: 2px dashed black; */
+    }
+
+    
+    .meal-info{
+        line-height: 5px;
+        color:black;
+        font-style: oblique;
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 4.5%;
+        /* border: 2px dashed grey; */
+        width: 90%;
+        padding-top: 1%;
+    }
+
+    .meal-info p{
+        margin-top: 0;
+    }
+
+    .meal-ingred{
+        color:black;
+        margin-left: 4.5%;
+        /* border: 2px dashed grey; */
+        width: 94%;
+    }
+
+    .ingred-list{
+        background-color: gainsboro;
+        height: 126px;
+        overflow: auto;
+        padding-left: 15px;
+    }
+    
+    .meal-recipe{
+        color:black;
+        margin-left: 4.5%;
+        /* border: 2px dashed grey; */
+        width: 94%;
+    }
 }
