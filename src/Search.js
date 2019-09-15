@@ -6,17 +6,20 @@ class Search extends Component{
         name : null
     }
 
+    // When there is a change in the text box, the value obtained will be updated into the state
     handleChange = (e) => {
         this.setState({
           name : e.target.value
        })
     }
 
+    // On submit, the 'Search' Component will return the name of the search searched by the user
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.mySearch(this.state.name);
     }
 
+    // blurMode() function, removes the data from the search box every time the search box is inactive or blurred
     blurMode = (e) =>{
         e.target.value = ""
     }

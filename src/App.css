@@ -17,6 +17,7 @@
     font-size: 40px;
 }
 
+/* Making website compatible for devices with max screen width = 425px (Mobile  Phones) */
 @media only screen and (max-width: 425px){
     .Header{
         font-weight: 400;

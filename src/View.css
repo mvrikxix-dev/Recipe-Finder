@@ -14,14 +14,13 @@
     top: 150px;
     width: 100%;
     min-height: 100%;
-    /* background-color: rgba(255,255,255,0.6); */
 }
 
 .wrapper{
     margin-top: 3%;
     position: relative;
     width: 65%;
-    height: 610px;
+    height: 715px;
     left: 50%;
     transform: translate(-50%);
     border-radius: 23px;
@@ -37,7 +36,6 @@
 
 .title{
     display: inline-block;
-    /* border: 2px dashed gainsboro; */
     font-size: 12px;
     padding-left: 6px;
     padding-right: 6px;
@@ -52,10 +50,9 @@
 .title:hover{
     color: rgb(1, 32, 49);
 }
- 
+
 .heart{
     display: inline-block;
-    /* border: 2px dashed gainsboro; */
     min-width: 10%;
     height: 61px;
     font-size: 25px;
@@ -88,7 +85,6 @@
     float: right;
     width: 57%;
     min-height: 100%;
-    /* border: 2px dashed black; */
 }
 
 .meal-info{
@@ -98,7 +94,6 @@
     font-weight: 400;
     font-size: 16px;
     margin-left: 3%;
-    /* border: 2px dashed grey; */
     width: 40%;
     padding-top: 1%;
 }
@@ -106,7 +101,6 @@
 .meal-ingred{
     color:black;
     margin-left: 3%;
-    /* border: 2px dashed grey; */
     width: 94%;
 }
 
@@ -129,7 +123,6 @@
 .meal-recipe{
     color:black;
     margin-left: 3%;
-    /* border: 2px dashed grey; */
     width: 94%;
 }
 
@@ -141,7 +134,7 @@
 
 .recipe{
     background-color: gainsboro;
-    height: 150px;
+    height: 250px;
     overflow: auto;
     padding-left: 15px;    
 }
@@ -150,17 +143,16 @@
     margin-top: 9px;
 }
 
+/* Making website compatible for devices with max screen width = 425px (Mobile  Phones) */
 @media only screen and (max-width: 425px){
     #view-container{
         position: absolute;
         top: 200px;
         width: 100%;
         min-height: 100%;
-        /* background-color: rgba(255,255,255,0.6); */
     }
 
     #sub-header{
-        /* border: 2px dashed grey; */
         position: absolute;
         left: 50%;
         top: 220px;
@@ -176,12 +168,11 @@
         margin-top: 35px;
         margin-bottom: 10px;
         width: 80%;
-        height: 790px;
+        height: 820px;
     }
 
     .title{
         display: inline-block;
-        /* border: 2px dashed gainsboro; */
         font-size: 9.5px;
         padding-left: 6px;
         padding-right: 6px;
@@ -204,7 +195,6 @@
 
     .heart{
         display: inline-block;
-        /* border: 2px dashed gainsboro; */
         min-width: 8.5%;
         max-width: 8.5%;
         height: 61px;
@@ -224,13 +214,11 @@
         display: inline-block;
         width: 92.3%;
         height: 100%;
-        /* border: 2px dashed grey; */
     }
 
     .right{
         width: 100%;
         min-height: 100%;
-        /* border: 2px dashed black; */
     }
 
     
@@ -240,8 +228,7 @@
         font-style: oblique;
         font-weight: 400;
         font-size: 16px;
-        margin-left: 4.5%;
-        /* border: 2px dashed grey; */
+        margin-left: 3%;
         width: 90%;
         padding-top: 1%;
     }
@@ -252,8 +239,7 @@
 
     .meal-ingred{
         color:black;
-        margin-left: 4.5%;
-        /* border: 2px dashed grey; */
+        margin-left: 3%;
         width: 94%;
     }
 
@@ -266,8 +252,7 @@
     
     .meal-recipe{
         color:black;
-        margin-left: 4.5%;
-        /* border: 2px dashed grey; */
+        margin-left: 3%;
         width: 94%;
     }
 }
